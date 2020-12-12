@@ -1,4 +1,4 @@
-FROM node:12.18.4-alpine3.12
+FROM node:12.20.0-alpine3.11
 ARG NPM_VERSION=latest
 RUN apk add --no-cache git tini
 RUN npm install -g --unsafe-perm zenn-cli@$NPM_VERSION
